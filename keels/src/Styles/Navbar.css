@@ -1,0 +1,25 @@
+.navbar-container{
+
+    box-sizing: border-box;
+    background-color: black;
+    
+}
+
+.navbar-box{
+
+    padding: auto;
+}
+
+.nav-link{
+
+    display: inline;
+    padding: 10px;
+}
+
+.Homebar-link{
+
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    list-style-type: none;
+   
+}
