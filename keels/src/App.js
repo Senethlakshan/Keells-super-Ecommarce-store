@@ -6,7 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import NavigationBar from './Components/Navigation/NavigationBar';
 import Homepage from './Components/Homepage/Homepage';
 import Signin from './Auth/signin';
-import Signup from './Auth/signup';
+
 
 
 class App extends Component{
@@ -17,11 +17,10 @@ class App extends Component{
     return(
      <Routes>
        <Route path="/" element={<NavigationBar/>} >
-       <Route path="/Home" element={<Homepage />} />
-       <Route path="/login" element={<Signin />} >
+       <Route path="/Home/*" element={<Homepage />} />
+       <Route path="login" element={<Signin />} >
        <Route path=":invoiceId" element={<Signin />} />
        </Route>
-       <Route path="/register" element={<Signup />} />
        <Route path="*" element={<p> there is a nothing here ! </p>} />
       </Route>
       
